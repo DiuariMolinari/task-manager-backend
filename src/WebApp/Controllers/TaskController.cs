@@ -20,7 +20,7 @@ namespace WebApi.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<TaskModel>> Get()
         {
-            return _tasks;
+            return Ok(_tasks);
         }
 
         [HttpGet("{id}")]
